@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en"> 
 
 <head <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,7 +6,25 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Pesto Homepage</title>
-  <link rel="manifest" href="/manifest.json">
+  <meta name="google-site-verification" content="D3LFrdUTrlatgJkydYfAXZmXHYtzPQvFqwLoVjy8Iig" />
+  <!-- Link to manifest with subfolder path -->
+  <link rel="manifest" href="/PESTOhome/manifest.json"> 
+  
+<!-- 1. Standard Favicon for Browser Tabs -->
+<link rel="icon" type="image/png" href="logo.png">
+
+<!-- 2. For Chrome & Android (High Res) -->
+<link rel="icon" sizes="192x192" href="logo.png">
+<link rel="icon" sizes="512x512" href="logo.png">
+
+<!-- 3. For Apple iPhone/iPad (Home Screen) -->
+<link rel="apple-touch-icon" href="logo.png">
+
+<!-- 4. Windows Tile Icon -->
+<meta name="msapplication-TileImage" content="logo.png">
+
+</head>
+
   <style>
     body {
       font-family: 'Syne', sans-serif;
@@ -33,7 +51,25 @@
       gap: 20px;
     }
   </style>
-  <meta name="google-site-verification" content="D3LFrdUTrlatgJkydYfAXZmXHYtzPQvFqwLoVjy8Iig" />
+<!-- 1. Standard Favicon for Browser Tabs -->
+<link rel="icon" type="image/jpeg" href="/logo.jpg">
+
+<!-- 2. For Chrome & Android (High Res) -->
+<link rel="icon" sizes="192x192" href="/logo.jpg">
+<link rel="icon" sizes="512x512" href="/logo.jpg">
+
+<!-- 3. For Apple iPhone/iPad (Home Screen) -->
+<link rel="apple-touch-icon" href="/logo.jpg">
+
+<!-- 4. Windows Tile Icon -->
+<meta name="msapplication-TileImage" content="/logo.jpg">
+<meta name="msapplication-TileColor" content="#ffffff">
+
+<!-- 5. Chrome "Mobile-Friendly" App Settings -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-adsense-account" content="ca-pub-9315493865497245">
 </head>
 
 
@@ -52,26 +88,25 @@
 <!-- Content. Add your bio here. -->
   <div class="w3-margin">
     <h2 class="w3-text-white"><strong>Pesto Homepage</strong></h2>
-    <h6>for support, email PESTO.helpline@gmail.com</h6>
+    <h6>for support, email PESTO.helpline@gmail.com </h6>
     </div>
 
   <!-- Links section 1. Replace the # inside of the "" with your links. -->
   <div class="links-container" id="matrixContainer">
     <!--You can delete the ID part-->
-    <a href="https://www.google.com/" class="w3-button w3-hover-green w3-large w3-green" style="width: 350px;"
-      target="_blank">get out of here</a>
-    <a href="https://youtu.be/dQw4w9WgXcQ" class="w3-button w3-hover-red w3-large w3-red" style="width: 350px;"
-      target="_blank"> do not press</a>
-    <a href="https://realben9.github.io/gravity/d23.html"
-      class="w3-button w3-hover-blue w3-large w3-blue" style="width: 350px;" target="_blank">break google</a>
-    <a href="https://edu.google.com/workspace-for-education/classroom/" class="w3-button w3-hover-grey w3-large w3-grey"
-      style="width: 350px;" target="_blank">go get an A+ and impress your parents</a>
-    <a id="startMatrix" class="w3-button w3-hover-yellow w3-large w3-yellow" style="width: 350px;" target="_blank">start
-      matrix</a>
-    <a id="pauseMatrix" class="w3-button w3-hover-cyan w3-large w3-cyan" style="width: 350px;" target="_blank">pause
-      matrix</a>
-    <a id="stopMatrix" class="w3-button w3-hover-orange w3-large w3-orange" style="width: 350px;" target="_blank">stop
-      matrix</a>
+<a href="https://www.google.com/" class="w3-button w3-hover-lime w3-large w3-green w3-round-large" style="width: 350px;" target="_blank">get out of here</a>
+
+<a href="https://youtu.be/dQw4w9WgXcQ" class="w3-button w3-hover-deep-orange w3-large w3-red w3-round-large" style="width: 350px;" target="_blank"> do not press</a>
+
+<a href="https://realben9.github.io/gravity/d23.html" class="w3-button w3-hover-light-blue w3-large w3-blue w3-round-large" style="width: 350px;" target="_blank">break google</a>
+
+<a href="https://edu.google.com/workspace-for-education/classroom/" class="w3-button w3-hover-amber w3-large w3-orange w3-round-large" style="width: 350px;" target="_blank">go get an A+ and impress your parents</a>
+
+<a id="startMatrix" class="w3-button w3-hover-khaki w3-large w3-yellow w3-round-large" style="width: 350px;" target="_blank">start matrix</a>
+
+<a id="pauseMatrix" class="w3-button w3-hover-aqua w3-large w3-cyan w3-round-large" style="width: 350px;" target="_blank">pause matrix</a>
+
+<a id="stopMatrix" class="w3-button w3-hover-pink w3-large w3-purple w3-round-large" style="width: 350px;" target="_blank">stop matrix</a>
     </a>
   </div><a>
   </a></div><a>
@@ -183,5 +218,11 @@
         }
       };
     </script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/PESTOhome/sw.js', { scope: '/PESTOhome/' })
+      .then(() => console.log('Service Worker Registered'));
+  }
+</script>
  </body>
 </html>
